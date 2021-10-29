@@ -56,14 +56,17 @@ header > div {
 
 .true {
     list-style-type: "✔️";
+    padding-left: 1rem;
 }
 
 .false {
     list-style-type: "⚠️";
+    padding-left: 1rem;
 }
 
 .link {
     list-style-type: "🔗";
+    padding-left: 1rem;
 }
 
 #header-left {

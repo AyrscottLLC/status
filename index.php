@@ -48,8 +48,10 @@
             </ul>
         </section>
         <section>
-            <h2>Heartbeats</h2>
-            <li class=true></li>
+            <h2>Application Heartbeats</h2>
+            <ul>
+                <li class=true>CEB</li>
+            </ul>
         </section>
         <section>
             <h2>PaaS Providers Status Pages</h2>
