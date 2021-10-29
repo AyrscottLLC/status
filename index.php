@@ -54,10 +54,10 @@
         <section>
             <h2>PaaS Providers Status Pages</h2>
             <ul>
-                <li>WPEngine</li>
-                <li>Linode</li>
-                <li>GitHub</li>
-                <li>Heroku</li>
+                <li class=link>WPEngine</li>
+                <li class=link>Linode</li>
+                <li class=link>GitHub</li>
+                <li class=link>Heroku</li>
             </ul>
         </section>
     </section>

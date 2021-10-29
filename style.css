@@ -62,6 +62,10 @@ header > div {
     list-style-type: "⚠️";
 }
 
+.link {
+    list-style-type: "🔗";
+}
+
 #header-left {
     flex-grow: 1;
     text-align: right;
