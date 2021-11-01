@@ -9,22 +9,30 @@ $client->set('foo', 'bar');
 $value = $client->get('foo');
 
 */
+
 require 'vendor/autoload.php';
 
 // where we will store our redis client...
 $client = null;
+$request_start = microtime(true);
 
 function validate_key() {
+    $return_value = false;
+
     // check that an id and key were provided
     if(isset($_REQUEST['id']) && isset($_REQUEST['key'])) {
 
         // check if we have a local private key provided by heroku
         if(empty($_ENV['PRIVATE_KEY'])) {
-            return true;
+            // key always passes locally
+            $return_value = true;
         } else {
-            return ($_ENV['PRIVATE_KEY'] === $_REQUEST['key']);
+            // return if the key matches
+            $return_value = ($_ENV['PRIVATE_KEY'] === $_REQUEST['key']);
         }
     }
+
+    return $return_value;
 }
 
 // check if we are in heroku or on our local dev station
@@ -34,9 +42,11 @@ if(empty($_ENV['REDIS_TLS_URL'])) {
     $client = new Predis\Client(getenv('REDIS_URL') . "?ssl[verify_peer_name]=0&ssl[verify_peer]=0");
 } 
 
+// check if were provided a valid key for our environment 
 if(validate_key()) {
-    $client->set($_REQUEST['id'], microtime(true));
-    http_response_code(202);
+    // if the key validates store the time the requested started
+    $client->set($_REQUEST['id'], $request_start);
+    http_response_code(202);    // 202 - accepted
 } else {
-    http_response_code(400);
+    http_response_code(400);    // 400 - bad request
 }
