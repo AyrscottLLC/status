@@ -132,6 +132,9 @@ foreach ($servers as $server) {
 
         </section>
     </section>
+    <footer>
+        Copyright &copy; <?= date('Y') ?> Ayrscott, LLC
+    </footer>
 </body>
 
 </html>
