@@ -63,10 +63,10 @@ foreach ($servers as $server) {
     </header>
     <section id=wrapper>
         <section id=news>
-            <h1>News</h1>
+            <h1>Latest News</h1>
             <section>
-                <h2>2021-10-29</h2>
-                Ayrscott Status page introduced.
+                <h2>2021-11-01</h2>
+                Heroku environments added
             </section>
         </section>
 
