@@ -12,10 +12,6 @@ $value = $client->get('foo');
 
 require 'vendor/autoload.php';
 
-// where we will store our redis client...
-$client = null;
-$request_start = microtime(true);
-
 function validate_key() {
     $return_value = false;
 
@@ -34,6 +30,11 @@ function validate_key() {
 
     return $return_value;
 }
+
+
+// where we will store our redis client...
+$client = null;
+$request_start = microtime(true);
 
 // check if we are in heroku or on our local dev station
 if(empty($_ENV['REDIS_TLS_URL'])) {
