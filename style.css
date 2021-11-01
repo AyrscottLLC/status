@@ -1,11 +1,15 @@
-/* * {
+/* 
+
+* {
     border: 1px solid red;
-} */
+} 
+
+
+*/
 
 html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ddd;
-    
 }
 
 body {
@@ -15,6 +19,12 @@ body {
 header {
     display:flex;
     text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    color: #888;
 }
 
 #news {
@@ -37,9 +47,6 @@ section {
     border-radius: 12px;
     filter: drop-shadow(8px 8px 4px rgba(20,20,20,0.8));
     font-size: 1.5rem;
-    /* box-shadow: dimgray 4px;
-     */
-
 }
 
 section > h1, section > h2, section > h3 {
@@ -86,3 +93,4 @@ header > div {
 #logo {
     height: 100px;
 }
+
