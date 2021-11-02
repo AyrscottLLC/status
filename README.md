@@ -1,8 +1,20 @@
-Windows 10/11
-Create a new scheduled task.
+# Ayrscott Status Page Client
 
-Application: powershell.exe
+## Registration
 
-Arguments:
+Contact info@ayrscott.com to request a monitoring service ID.
 
--Command "Invoke-WebRequest https://status-ayrscott-com.herokuapp.com/heartbeat.php?id=MACHINE_ID&key=SERVICE_KEY"
+## Installation
+### Linux
+
+* Modify client.go with registration details
+* Build client.go making client
+* Create a cronjob to run client
+
+### Windows 10/11
+
+* Modify client.go with registration details
+* Build client.go making client.exe
+* Create a scheduled task to run client.exe
+
+### Copyright (C) 2021 Ayrscott, LLC
