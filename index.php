@@ -32,10 +32,10 @@ if (empty($_ENV['REDIS_TLS_URL'])) {
 
 $results = array();
 
-$servers = ['3700X'];
+$servers = ['3700X', 'i3-8100'];
 
 foreach ($servers as $server) {
-    $results[$server] = $client->get('3700X');
+    $results[$server] = $client->get($server);
 }
 
 
