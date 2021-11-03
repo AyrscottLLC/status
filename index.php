@@ -55,7 +55,7 @@ foreach ($servers as $server) {
 
     <header>
         <div id="header-left">
-            <img id="logo" src="logo.png" alt="Ayrscott, LLC">
+            <a href="https://ayrscott.com/" alt="Ayrscott, LLC" title="Ayrscott, LLC"><img id="logo" src="logo.png" alt="Ayrscott, LLC"></a>
         </div>
         <div id="header-right">
             Status
@@ -82,7 +82,7 @@ foreach ($servers as $server) {
                         $ago = solveTime($last_heard_from);
                         $ago_text = number_format($ago, 1);
                         $class = 'false';
-                        if ($ago < 60) $class = 'true';
+                        if ($ago < 150) $class = 'true';
                         echo "<li class=$class>$server (~$ago_text seconds ago)</li>\n";
                     }
                     ?>
