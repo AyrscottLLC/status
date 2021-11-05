@@ -7,14 +7,13 @@ Contact info@ayrscott.com to request a monitoring service ID.
 ## Installation
 ### Linux
 
-* Modify client.go with registration details
-* Build client.go making client
-* Create a cronjob to run client
+* Build client.go
+* Create a cronjob that runs the compiled client and passes in the monitoring service ID and key
 
 ### Windows 10/11
 
-* Modify client.go with registration details
-* Build client.go making client.exe
-* Create a scheduled task to run client.exe
+
+* Build client.go
+* Create a scheduled task that runs the compiled client and passes in the monitoring service ID and key
 
 ### Copyright (C) 2021 Ayrscott, LLC
