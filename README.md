@@ -1,4 +1,12 @@
+## index.php
+### The Ayrscott Staus Page
 
+Provides an overview of the health and uptime of services and devices managed by Ayrscott, LLC
+
+## heartbeat.php
+### The Ayrscott Status Heartbeat Listener
+
+This listens for authorized clients and updates their information in Redis 
 
 ## client.go
 ### The Ayrscott Status Page Client
