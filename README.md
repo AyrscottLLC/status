@@ -1,3 +1,7 @@
+# Status
+
+This project contains the server and clientside code required to operate status.ayrscott.com
+
 ## index.php
 ### The Ayrscott Staus Page
 
