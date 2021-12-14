@@ -1,6 +1,6 @@
-# Status
+# Realtime Status
 
-This project contains the server and clientside code required to operate status.ayrscott.com
+This project contains the server and clientside code required to operate realtime.ayrscott.com
 
 ## index.php
 ### The Ayrscott Staus Page
